@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Go Anonymous"
+        android:id="@+id/anonymous"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="Compress"
+        android:id="@+id/group_compress"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="Send File"
+        android:id="@+id/send_file_group"
+        app:showAsAction="never">
+    </item>
+</menu>

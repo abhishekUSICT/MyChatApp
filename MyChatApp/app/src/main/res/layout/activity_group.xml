@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupActivity">
+    <include
+        android:id="@+id/group_bar_layout"
+        layout="@layout/main_toolbar">
+    </include>
+    <ListView
+        android:id="@+id/group_message_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/group_bar_layout"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_height="600dp" />
+    <LinearLayout
+        android:id="@+id/type_and_send"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/group_message_input"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:hint="type here"
+            android:padding="18dp">
+        </EditText>
+        <ImageButton
+            android:id="@+id/send_message_image"
+            android:src="@drawable/send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop">
+
+        </ImageButton>
+    </LinearLayout>
+</RelativeLayout>
